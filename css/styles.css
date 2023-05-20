@@ -41,9 +41,12 @@ img {
 .main-header {
     padding-top: 25.5px;
     padding-bottom: 25.5px;
-
 }
 
+.portfolio-header {
+    padding-top: 25.5px;
+    padding-bottom: 25.5px;
+}
 .list {
     list-style: none;
 }
@@ -151,10 +154,14 @@ img {
     background-color: var(--secondary-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    width: 169px;
+    min-width: 169px;
     height: 56px;
-    padding-left: 636px;
-    padding-right: 635px;
+    margin-left: 636px;
+    margin-top: 48px;
+    padding: 16px 32px 16px 32px;
+    
+
+
 }
 
 .menu-list {
@@ -182,7 +189,10 @@ img {
     letter-spacing: 0.02em;
     color: var(--light-color);
     background-color: var(--title-color);
-    margin-bottom: 48px;
+    margin: 0 auto;
+    max-width: 496px;
+    
+    
 }
 
 .hidden {
@@ -199,8 +209,10 @@ img {
 }
 
 .secondary-section {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    display: flex;
+    padding-left: 120px;
+    padding-top: 156px;
+    
 }
 
 .secondary-title {
@@ -210,20 +222,30 @@ img {
     letter-spacing: 0.02em;
     color: var(--title-color);
     margin-bottom: 8px;
+    
+}
+
+.list-secondary {
+    display: flex;
 }
 
 .secondary-item-list {
     margin: 24px;
+
 }
 .secondary-text {
     letter-spacing: 0.02em;
     color: var(--primery-color);
+    max-width: 264px;
+    
 }
 
 .profile {
     padding-top: 120px;
+    padding-left: 156px;
     padding-bottom: 120px;
 }
+
 
 .list-profile {
     margin: 24px;
@@ -237,6 +259,7 @@ img {
     text-transform: capitalize;
     color: var(--title-color);
     padding-bottom: 72px;
+
 }
 
 .team {
@@ -251,6 +274,23 @@ img {
 
 .list-item-team {
     background-color: var(--light-color);
+}
+
+.btn-list {
+    display: flex;
+    align-items: center;
+    margin-left: 427px;
+    margin-top: 120px;
+    
+    
+}
+
+.secondary-section-wrap {
+    display: flex;
+}
+
+.profile-wrap {
+    display: flex;
 }
 
 .mod-btn {
@@ -268,6 +308,9 @@ img {
     background-color: var(--secondary-light-color);
     min-width: 69px;
     height: 48px;
+    padding: 12px 24px 12px 24px;
+    border: 1px solid #E7E9FC;
+    gap: 24px;
 }
 
 .section-footer {
