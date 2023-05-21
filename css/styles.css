@@ -34,7 +34,7 @@ img {
 }
 
 .container {
-    width: 1558px;
+    width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
@@ -53,8 +53,9 @@ img {
 /* *----------------------HEADER-INDEX------------------* */
 
 .main-header {
-    padding-top: 25.5px;
-    padding-bottom: 25.5px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    
 }
 
 .portfolio-header {
@@ -132,6 +133,7 @@ img {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    border-bottom: 1px solid #e7e9fc
 }
 
 .menu-item {
@@ -143,7 +145,7 @@ img {
 }
 
 .address-item {
-    margin-right: 40px;
+    border-bottom: 1px solid #e7e9fc
 }
 
 /* -------------------HERO SECTION--------------------- */
@@ -183,8 +185,9 @@ img {
     border-radius: 4px;
     min-width: 169px;
     height: 56px;
-    margin-left: 636px;
-    margin-top: 48px;
+    display: block;
+    margin: 0 auto;
+    border: none;
     padding: 16px 32px 16px 32px;
     
 }
@@ -199,12 +202,13 @@ img {
     background-color: var(--title-color);
     margin: 0 auto;
     max-width: 496px;
+    margin-bottom: 48px;
     
     
 }
 
 /*  -----------------SECONDARY-SECTION----------------- */
-.hidden {
+.visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -219,6 +223,8 @@ img {
 
 .secondary-section {
     padding-top: 120px;
+    padding-bottom: 120px;
+    min-width: 1128px;
 
 }
 
@@ -242,8 +248,7 @@ img {
 }
 
 .secondary-item-list {
-    margin: 24px;
-
+    gap: 24px;
 }
 
 .secondary-title {
@@ -260,7 +265,10 @@ img {
 .secondary-text {
     letter-spacing: 0.02em;
     color: var(--primery-color);
-    max-width: 264px;
+    display: flex;
+    min-width: 264px;
+    width: calc((100% - 72px) / 4);
+    gap: 24px;
     
 }
 
@@ -275,13 +283,16 @@ img {
 
 .list-img {
     display: flex;
+    margin-right: 24px;
     padding-left: 156px;
-    gap: 24px;
+
 }
 
 .list-profile {
     
     width: 360px;
+    width: calc((100% - 48px) / 3);
+    gap: 24px;
 }
 
 /* -----------------------TEAM-SECTION---------------------- */
@@ -294,15 +305,22 @@ img {
 
 .list-team {
     display: flex;
+    width: calc((100% - 72px) / 4);
     padding-left: 156px;
 
 }
 
+.team {
+    width: 264px;
+    padding: 32px 16px;
+    margin: 0 auto;
+}
 
 .list-item-team {
     background-color: var(--light-color);
-    margin: 24px;
+    margin-right: 24px;
     text-align: center;
+    border-radius: 0px 0px 4px 4px;
 }
 
 .secondary-title-team {
@@ -321,6 +339,7 @@ img {
 .secondary-text-team {
     letter-spacing: 0.02em;
     color: var(--primery-color);
+    text-align: center;
     margin-bottom: 32px;
 
 }
@@ -329,6 +348,7 @@ img {
 
 .logo-link-footer {
     margin-bottom: 17.5px;
+    
 }
 
 .section-footer {
@@ -336,8 +356,7 @@ img {
     color: var(--secondary-light-color);
     background-color: var(--title-color);
     padding-left: 156px;
-    padding-top: 101.5px;
-    padding-bottom: 100px;
+    padding: 100px 0;
 }
 
 .logo-link-footer {
@@ -346,11 +365,12 @@ img {
     font-weight: 800;
     font-size: 18px;
     line-height: 1.17;
-    display: flex;
+    display: inline-block;
     align-items: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--secondary-color);
+    margin-bottom: 16px;
 }
 
 .logo-color-footer {
@@ -364,8 +384,9 @@ img {
 /* --------------PORTFOLIO HEADER--------------- */
 
 .portfolio-header {
-    padding-top: 25.5px;
-    padding-bottom: 25.5px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #e7e9fc
 }
 
 /* --------------PORTFOLIO GALERY-SECTION--------------- */
@@ -379,20 +400,37 @@ img {
 
 .btn-list {
     display: flex;
+    justify-content: center;
     align-items: center;
     margin-bottom: 72px;   
     padding-left: 427px;
 }
 
+.mod-btn:hover,
+.mod-btn:focus {
+    border: 1px solid transparent
+}
+
 .btn-item-list {
-    margin: 24px;
+    margin-right: 24px;
 }
 
 .gallery-list {
+    width: calc((100% - 48px) / 3);
     display: flex;
     flex-wrap: wrap;
     gap: 48px 24px;
     padding-left: 156px;
+}
+
+.gallery-item {
+    width: 360px;
+}
+
+.container gallery {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
 }
 
 
