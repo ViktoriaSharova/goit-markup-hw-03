@@ -134,6 +134,7 @@ img {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    padding: 24px 0
 
 }
 
@@ -308,22 +309,21 @@ img {
 
 .list-team {
     display: flex;
-    flex-wrap: wrap;
     gap: 24px;
-    
     padding-left: 156px;
 
 }
 
 .team {
-    min-width: 264px;
+    
     padding: 32px 16px;
  
-
 }
 
 .list-item-team {
     background-color: var(--light-color);
+    min-width: 264px;
+    display: flex;
     width: calc((100% - 72px) / 4);
     gap: 24px;
     text-align: center;
