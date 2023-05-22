@@ -48,6 +48,8 @@ img {
 
 .link {
     text-decoration: none;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 /* *----------------------HEADER-INDEX------------------* */
@@ -97,8 +99,7 @@ img {
     color: var(--secondary-color);
     margin-right: 76px;
     margin-left: 156px;
-    padding-top: 24px;
-    padding-bottom: 24px;
+
 }
 .logo-color {
     color: var(--title-color);
