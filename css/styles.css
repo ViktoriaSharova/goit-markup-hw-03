@@ -76,8 +76,6 @@ img {
 
 .menu-list {
     display: flex;
-    padding-top: 24px;
-    padding-bottom: 24px;
     gap: 40px;
 
 }
@@ -147,6 +145,8 @@ img {
 
 .menu-link {
     color: var(--title-color);
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .address-item {
@@ -430,13 +430,13 @@ img {
 
     display: flex;
     flex-wrap: wrap;
+
     gap: 48px 24px;
-    padding-left: 156px;
+
 }
 
 .gallery-portfolio {
     width: calc((100% - 48px) / 3);
-    border: 1px solid #e7e9fc;
 }
 
 .gallery-item {
@@ -444,23 +444,24 @@ img {
     
 }
 
-.gallery {
-    padding: 32px 16px;
+.container-gallery {
+    padding-left: 16px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    border: 1px solid #e7e9fc;
     border-top: none;
 }
 
 
 
 .gallery-title {
-    padding-left: 32px;
-    padding-top: 16px;
+
     margin-bottom: 8px;
 
 }
 
 .gallery-text {
-    padding-left: 16px;
-    padding-bottom: 32px;
+
 }
 
 .mod-btn {
