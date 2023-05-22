@@ -97,6 +97,8 @@ img {
     color: var(--secondary-color);
     margin-right: 76px;
     margin-left: 156px;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 .logo-color {
     color: var(--title-color);
@@ -135,8 +137,7 @@ img {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    padding-top: 24px;
-    padding-bottom: 24px;
+
 
 }
 
